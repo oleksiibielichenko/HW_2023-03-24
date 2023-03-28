@@ -32,15 +32,13 @@ products = {
     "TV": tv,
     "Smartphone": smartphone,
     "MP3": mp3,
-    "DvD": dvd
+    "DVD": dvd
 }
 
-is_Running = True
-
-while is_Running:
+while True:
     user_pick = int(input(
         f"""
-1) Show products 
+1) Show products
 2) Show Category
 3) Admin mode
 4) Quit
@@ -48,6 +46,23 @@ while is_Running:
     ))
     if user_pick == 1:
         print_products(products)
-
+    elif user_pick == 3:
+        while True:
+            admin_pick = int(input(
+                f"""
+1) Add product
+2) Delete product
+3) Change name of product
+4) Quit
+    Make your choice: """
+            ))
+            if admin_pick == 1:
+                print("----Add product")
+            elif admin_pick == 2:
+                print("----Del prod")
+            elif admin_pick == 3:
+                print("----Change name")
+            elif admin_pick == 4:
+                exit()
     elif user_pick == 4:
-        is_Running = False
+        exit()

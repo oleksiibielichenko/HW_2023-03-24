@@ -1,6 +1,6 @@
 def print_products(products):
     user_category = input(
-        f"What do you wanna pick : {products.keys()} , enter category name: ")
+        f"What do you wanna pick from {products.keys()}? Enter category name: ")
     for category, list_of_products in products.items():
         if user_category == category:
             return print(f"""
