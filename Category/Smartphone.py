@@ -11,4 +11,4 @@ smartphone = [
         "label": 'Samsung',
         "price": 321
     },
-],
+]
